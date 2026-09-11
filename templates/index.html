@@ -1,0 +1,126 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Examination</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <!-- 1. Start screen -->
+  <div id="screen-start" class="screen active">
+    <div class="card">
+      <h1>Eye-Tracking Calibration</h1>
+      <p class="muted">Press <strong>Start</strong> when you are ready.</p>
+      <button id="startBtn" class="btn primary">Start</button>
+      <p class="tiny muted">
+        Camera access is required. The last 5 seconds of the countdown and
+        the whole dot sequence will be recorded and saved to this computer.
+      </p>
+    </div>
+  </div>
+
+  <!-- 2. Permission screen -->
+  <div id="screen-permission" class="screen">
+    <div class="card">
+      <h2>Camera access needed</h2>
+      <p id="permMsg" class="warn">Please allow camera access to continue.</p>
+      <button id="retryBtn" class="btn primary">Allow camera &amp; continue</button>
+      <p class="tiny muted">
+        If the browser blocked the camera, click the camera icon in the
+        address bar, choose "Allow", then press the button above.
+      </p>
+    </div>
+  </div>
+
+  <!-- 3. Countdown screen -->
+  <div id="screen-countdown" class="screen">
+    <div class="countdown-wrap">
+      <div id="countNumber" class="count-number">10</div>
+      <p id="countHint" class="muted">Get ready…</p>
+    </div>
+  </div>
+
+  <!-- 4. Calibration screen (styled as a fake exam page) -->
+  <div id="screen-calibration" class="screen">
+
+    <!-- dots will be injected here -->
+    <div id="dotLayer" class="dot-layer"></div>
+
+    <!-- fake exam UI -->
+    <div class="exam-wrap">
+      <div class="exam-panel" id="examPanel">
+
+        <!-- top bar -->
+        <div class="exam-topbar">
+          <div class="logo-square" aria-hidden="true"></div>
+          <div class="exam-title">National Online Examination 2026</div>
+          <div class="exam-timer" id="examTimer">00:45:00</div>
+        </div>
+
+        <!-- fake toolbar -->
+        <div class="exam-toolbar">
+          <button type="button" class="ex-btn">Save &amp; Next</button>
+          <button type="button" class="ex-btn">Mark for Review</button>
+          <button type="button" class="ex-btn">Clear Response</button>
+          <button type="button" class="ex-btn">Previous</button>
+          <button type="button" class="ex-btn danger">Submit Test</button>
+        </div>
+
+        <!-- main body: transcript / question box -->
+        <div class="exam-body">
+          <div class="exam-qno">Question 12 of 40 &nbsp;·&nbsp; Verbal Ability</div>
+
+          <div class="transcript-box">
+            <p class="ttl">Transcript</p>
+            <p class="para">
+              The quick brown fox jumps over the lazy dog while the evening
+              sun dips slowly behind the distant hills. A gentle breeze
+              moves across the meadow, and the river glints like beaten
+              silver under the fading light. Somewhere far away, a bell
+              tolls once and then is silent again.
+            </p>
+            <p class="question">
+              Which of the following best describes the tone of the passage?
+            </p>
+            <ul class="options">
+              <li><span class="opt">A</span> Sorrowful</li>
+              <li><span class="opt">B</span> Nostalgic</li>
+              <li><span class="opt">C</span> Neutral</li>
+              <li><span class="opt">D</span> Humorous</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- fake footer -->
+        <div class="exam-footer">
+          <span>Section: Verbal Ability</span>
+          <span>Candidate ID: 8A4C-2F91</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- instruction prompt on top -->
+    <div class="prompt-bar">
+      <span id="promptText">Look at the highlighted dot</span>
+    </div>
+  </div>
+
+  <!-- 5. Done screen -->
+  <div id="screen-done" class="screen">
+    <div class="card">
+      <h2>Done — recording saved</h2>
+      <p id="doneMsg" class="muted">Saving…</p>
+      <video id="preview" controls playsinline></video>
+      <div class="row">
+        <a id="downloadLink" class="btn" download="recording.webm">Download video</a>
+        <button id="restartBtn" class="btn primary">Run again</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
