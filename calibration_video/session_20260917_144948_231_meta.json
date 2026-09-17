@@ -1,0 +1,101 @@
+{
+  "session_id": "session_20260917_144948_231",
+  "saved_at": "2026-09-17T14:50:21",
+  "video_file": "session_20260917_144948_231.webm",
+  "video_bytes": 8649436,
+  "metadata": {
+    "screen": {
+      "screen": {
+        "width": 1280,
+        "height": 800,
+        "availWidth": 1280,
+        "availHeight": 752,
+        "colorDepth": 24,
+        "pixelDepth": 24,
+        "orientation": "landscape-primary"
+      },
+      "window": {
+        "innerWidth": 1280,
+        "innerHeight": 631,
+        "outerWidth": 1280,
+        "outerHeight": 752
+      },
+      "devicePixelRatio": 1.5,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+      "capturedAt": "2026-09-17T09:19:48.220Z"
+    },
+    "dots": [
+      {
+        "id": 0,
+        "label": "center",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": 1,
+        "label": "top-left",
+        "x": 6,
+        "y": 8
+      },
+      {
+        "id": 2,
+        "label": "top-right",
+        "x": 94,
+        "y": 8
+      },
+      {
+        "id": 3,
+        "label": "bottom-right",
+        "x": 94,
+        "y": 92
+      },
+      {
+        "id": 4,
+        "label": "bottom-left",
+        "x": 6,
+        "y": 92
+      },
+      {
+        "id": 5,
+        "label": "top-mid-left",
+        "x": 33,
+        "y": 8
+      },
+      {
+        "id": 6,
+        "label": "top-mid-right",
+        "x": 66,
+        "y": 8
+      },
+      {
+        "id": 7,
+        "label": "bottom-mid-right",
+        "x": 66,
+        "y": 92
+      },
+      {
+        "id": 8,
+        "label": "bottom-mid-left",
+        "x": 33,
+        "y": 92
+      },
+      {
+        "id": 9,
+        "label": "mid-left",
+        "x": 6,
+        "y": 50
+      },
+      {
+        "id": 10,
+        "label": "mid-right",
+        "x": 94,
+        "y": 50
+      }
+    ],
+    "countdownSeconds": 10,
+    "recordStartAt": 5,
+    "dwellMs": 2000,
+    "recordingStartedAt": "2026-09-17T09:19:53.272Z",
+    "finishedAt": "2026-09-17T09:20:21.271Z"
+  }
+}

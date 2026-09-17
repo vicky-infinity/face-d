@@ -1,0 +1,24 @@
+{
+  "session_id": "session_20260917_144948_231",
+  "created_at": "2026-09-17T14:49:48",
+  "screen": {
+    "screen": {
+      "width": 1280,
+      "height": 800,
+      "availWidth": 1280,
+      "availHeight": 752,
+      "colorDepth": 24,
+      "pixelDepth": 24,
+      "orientation": "landscape-primary"
+    },
+    "window": {
+      "innerWidth": 1280,
+      "innerHeight": 631,
+      "outerWidth": 1280,
+      "outerHeight": 752
+    },
+    "devicePixelRatio": 1.5,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+    "capturedAt": "2026-09-17T09:19:48.220Z"
+  }
+}
